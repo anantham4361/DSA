@@ -1,4 +1,4 @@
-//Program to perform array traversal, insertion, deletion
+//Program to perform array traversal, insertion
 #include <stdio.h>
 
 void traversal(int a[],int n){
@@ -10,8 +10,9 @@ void traversal(int a[],int n){
 
 int insertion(int a[],int n,int ele,int index){
     int temp;
-    if(n>9){
-        return 9;
+    if(n==10){
+        printf("\nArray is full\n");
+        return 10;
     }
     for (int i = 0; i < n; i++)
     {
@@ -27,9 +28,10 @@ int insertion(int a[],int n,int ele,int index){
         }
         
     }
-    
 return n;
 }
+
+
 
 
 void main(){
