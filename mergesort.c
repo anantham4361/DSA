@@ -3,7 +3,7 @@
 
 void merge(int a[], int left, int right)
 {
-    if (left >= right) // Corrected base condition
+    if (left >= right) 
     {
         return;
     }
