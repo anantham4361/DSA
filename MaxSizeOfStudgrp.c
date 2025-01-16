@@ -32,6 +32,11 @@ void maxSize(int a[], int n)
 
     for (int i = 1; i < n; i++)
     {
+        if (a[i]==a[i-1])
+        {
+            continue;
+        }
+        
         if (a[i] == a[i - 1] + 1) 
         {
             currentSize++; 
@@ -58,8 +63,8 @@ void maxSize(int a[], int n)
 void main()
 {
 
-    int s1[] = {10, 12, 13, 9, 14};
-    maxSize(s1,5);
+    int s1[] = {10, 12, 13,12, 9, 14};
+    maxSize(s1,6);
     int s2[] = {6, 4, 8, 7, 5};
     maxSize(s2,5);
 
